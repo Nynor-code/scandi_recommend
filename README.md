@@ -14,8 +14,7 @@ A **Streamlit app** that helps you find the best Scandinavian city to live in ba
 
 ## 📸 Screenshots
 
-![App Screenshot](https://via.placeholder.com/600x400.png?text=App+Screenshot)  
-*(Replace with actual screenshot once you have one)*
+![App Screenshot](./images/app_screen.png)
 
 ## 🧠 How It Works
 
