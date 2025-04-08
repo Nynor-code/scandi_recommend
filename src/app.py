@@ -6,7 +6,7 @@ from streamlit_folium import st_folium
 from sklearn.preprocessing import StandardScaler
 
 # Sample data (normally load from CSV or external file)
-data = {
+data_base = {
     "City": ["Stockholm", "Oslo", "Copenhagen", "Helsinki", "Reykjavik", "Gothenburg", "Aarhus", "Tampere"],
     "Country": ["Sweden", "Norway", "Denmark", "Finland", "Iceland", "Sweden", "Denmark", "Finland"],
     "Latitude": [59.3293, 59.9139, 55.6761, 60.1699, 64.1466, 57.7089, 56.1629, 61.4978],
@@ -18,6 +18,24 @@ data = {
     "Work_Life_Balance": [8.0, 8.2, 8.5, 8.3, 8.7, 8.1, 8.4, 8.0],
     "Tech_Job_Score": [8.2, 7.9, 8.4, 7.8, 6.5, 7.5, 7.6, 6.8]
 }
+
+data = {
+    "City": ["Reykjavik", "Trondheim", "Oslo", "Bergen", "Copenhagen", "Aarhus", "Helsinki", "Stockholm", "Tampere", "Gothenburg", "Malmo", 
+             "Rovaniemi", "Tromsø", "Luleå", "Umeå", "Kiruna", "Alta", "Narvik", "Oulu", "Bodø"],
+    "Country": ["Iceland", "Norway", "Norway", "Norway", "Denmark", "Denmark", "Finland", "Sweden", "Finland", "Sweden", "Sweden", 
+                "Finland", "Norway", "Sweden", "Sweden", "Sweden", "Norway", "Norway", "Finland", "Norway"],
+    "Latitude": [64.1466, 63.4305, 59.9139, 60.39299, 55.6761, 56.1629, 60.1695, 59.3293, 61.4991, 57.7089, 55.6049, 66.5039, 
+                 69.6496, 65.5848, 63.8258, 67.8558, 69.9656, 68.4384, 65.0125, 67.2804],
+    "Longitude": [-21.9426, 10.3951, 10.7522, 5.32415, 12.5683, 10.2039, 24.9354, 18.0686, 23.7871, 11.9746, 13.0038, 25.7294, 
+                  18.9560, 22.1567, 20.2630, 20.2253, 23.2712, 17.4423, 25.4682, 14.4048],
+    "Avg_Salary_EUR": [3500, 4500, 5000, 4700, 5500, 4800, 4600, 4800, 4300, 4700, 4500, 3300, 3900, 3700, 3600, 3400, 3300, 3100, 3700, 3300],
+    "Cost_of_Living_Index": [7.0, 6.5, 7.5, 6.8, 6.5, 6.3, 6.0, 6.4, 5.8, 6.2, 6.1, 5.5, 7.0, 6.5, 6.3, 7.2, 6.2, 6.3, 6.1, 6.5],
+    "Nature_Score": [8.5, 9.0, 8.0, 8.8, 7.0, 7.5, 7.8, 8.0, 8.5, 8.2, 7.8, 9.5, 9.0, 9.0, 8.5, 9.5, 9.0, 9.2, 8.4, 9.2],
+    "Mental_Health_Index": [8.0, 8.5, 9.0, 8.2, 8.8, 8.0, 8.5, 8.6, 8.0, 8.4, 8.2, 9.0, 8.5, 8.4, 8.2, 8.0, 8.5, 8.3, 8.1, 8.2],
+    "Work_Life_Balance": [5.87, 6.5, 6.32, 6.2, 7.05, 6.8, 6.51, 6.48, 6.2, 6.07, 5.8, 7.0, 6.6, 6.5, 6.7, 6.8, 6.3, 6.6, 6.4, 6.5],
+    "Tech_Job_Score": [7.5, 8.0, 8.5, 7.8, 9.0, 8.5, 8.8, 9.0, 8.0, 8.5, 8.0, 7.5, 8.0, 7.8, 8.2, 7.9, 7.8, 7.5, 8.1, 7.6]
+}
+
 
 # Convert to DataFrame
 df = pd.DataFrame(data)
