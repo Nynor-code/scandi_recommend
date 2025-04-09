@@ -48,7 +48,7 @@ Then open your browser at `http://localhost:8501`.
 
 The app is deployed on **Streamlit Cloud**, and you can access it directly here:
 
-[Streamlit Cloud Deployment](https://share.streamlit.io/Nynor-code/scandinavia-city-picker/main/)
+[Streamlit Cloud Deployment](https://scandi-recommender-565982217619.europe-west1.run.app/)
 
 ## 📁 Project Structure
 
