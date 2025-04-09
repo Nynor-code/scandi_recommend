@@ -29,8 +29,8 @@ Make sure you have Python 3.8+ installed.
 
 ```bash
 # Clone the repo
-git clone https://github.com/Nynor-code/scandinavia-city-picker.git
-cd scandinavia-city-picker
+git clone https://github.com/Nynor-code/scandi_recommender_app.git
+cd scandi_recommender_app
 
 # Install dependencies
 pip install -r requirements.txt

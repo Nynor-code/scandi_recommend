@@ -2,14 +2,17 @@
 FROM python:3.11-slim
 
 # Set working directory
-WORKDIR /app
+WORKDIR /src
 
 # Install dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy project files
-COPY . .
+COPY . /src
 
-# Default command (you can customize this)
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--allow-root"]
+# Expose port (8080 is the standard port for streamlit, but it will change automatically if the port gets busy)
+EXPOSE 8080
+
+# Run  streamlit
+CMD ["streamlit", "run", "src/app.py", "--server.port=8080", "--server.address=0.0.0.0"]
